@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -293,6 +293,18 @@
 <wire x1="-1.27" y1="-1.5" x2="5.08" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-1.5" x2="5.08" y2="1.5" width="0.127" layer="21"/>
 </package>
+<package name="DO-214AA_LITTELFUSE">
+<smd name="P$1" x="-2.4384" y="0" dx="2.159" dy="2.2606" layer="1"/>
+<smd name="P$2" x="2.4384" y="0" dx="2.159" dy="2.2606" layer="1"/>
+<wire x1="-2.3749" y1="2.54" x2="2.3749" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.3749" y1="-2.54" x2="-2.3749" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-2.3749" y1="2.54" x2="-2.3749" y2="1.778" width="0.127" layer="21"/>
+<wire x1="2.3749" y1="2.54" x2="2.3749" y2="1.778" width="0.127" layer="21"/>
+<wire x1="2.3749" y1="-2.54" x2="2.3749" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="-2.3749" y1="-2.54" x2="-2.3749" y2="-1.778" width="0.127" layer="21"/>
+<text x="-4.445" y="3.175" size="1.778" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<wire x1="-4.318" y1="2.159" x2="-4.318" y2="-2.159" width="0.4064" layer="25"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F103RB">
@@ -518,36 +530,35 @@
 <text x="-7.62" y="3.175" size="1.778" layer="95" font="vector" ratio="13">&gt;NAME</text>
 </symbol>
 <symbol name="TVS_BI">
-<pin name="P$1" x="-10.16" y="0" visible="pad" length="middle"/>
-<pin name="P$2" x="10.16" y="0" visible="pad" length="middle" rot="R180"/>
-<wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="0" visible="pad" length="middle"/>
+<pin name="P$2" x="7.62" y="0" visible="pad" length="middle" rot="R180"/>
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
 <polygon width="0.254" layer="94">
-<vertex x="5.08" y="2.54"/>
+<vertex x="2.54" y="1.27"/>
 <vertex x="0" y="0"/>
-<vertex x="5.08" y="-2.54"/>
+<vertex x="2.54" y="-1.27"/>
 </polygon>
 <polygon width="0.254" layer="94">
-<vertex x="-5.08" y="-2.54"/>
+<vertex x="-2.54" y="-1.27"/>
 <vertex x="0" y="0"/>
-<vertex x="-5.08" y="2.54"/>
+<vertex x="-2.54" y="1.27"/>
 </polygon>
 </symbol>
 <symbol name="TVS_UNI">
-<pin name="P$1" x="-10.16" y="0" visible="pad" length="middle"/>
-<pin name="P$2" x="10.16" y="0" visible="pad" length="middle" rot="R180"/>
-<wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="0" visible="pad" length="middle"/>
+<pin name="P$2" x="7.62" y="0" visible="pad" length="middle" rot="R180"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
 <polygon width="0.254" layer="94">
-<vertex x="5.08" y="2.54"/>
+<vertex x="2.54" y="1.27"/>
 <vertex x="0" y="0"/>
-<vertex x="5.08" y="-2.54"/>
+<vertex x="2.54" y="-1.27"/>
 </polygon>
-<wire x1="-5.08" y1="0" x2="0" y2="0" width="0.127" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.127" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -712,6 +723,22 @@
 <connect gate="G$1" pin="NRE" pad="2"/>
 <connect gate="G$1" pin="R" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TVS_DO-214AA">
+<gates>
+<gate name="G$1" symbol="TVS_BI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO-214AA_LITTELFUSE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
