@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -428,6 +428,18 @@
 <circle x="3" y="-2.75" radius="0.2" width="0.4" layer="21"/>
 <text x="5" y="0" size="1.4224" layer="21" font="vector" ratio="13" rot="R90" align="center">&gt;NAME</text>
 </package>
+<package name="SOT23-6_INTERSIL">
+<smd name="1" x="-0.95" y="-1.2" dx="0.6" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.2" dx="0.6" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.2" dx="0.6" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.2" dx="0.6" dy="1.2" layer="1"/>
+<smd name="5" x="0" y="1.2" dx="0.6" dy="1.2" layer="1"/>
+<smd name="6" x="-0.95" y="1.2" dx="0.6" dy="1.2" layer="1"/>
+<wire x1="-1.6" y1="1" x2="-1.6" y2="-1" width="0.125" layer="21"/>
+<wire x1="1.6" y1="1" x2="1.6" y2="-1" width="0.125" layer="21"/>
+<circle x="-1.75" y="-1.5" radius="0.1" width="0.225" layer="21"/>
+<text x="-1.9" y="-1.1" size="1.27" layer="25" font="vector" ratio="13" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F103RB">
@@ -804,6 +816,34 @@
 <circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 <text x="-5.08" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
+<symbol name="RS485_RCVR_ISL">
+<pin name="VCC" x="-12.7" y="2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="0" length="middle"/>
+<pin name="RO" x="-12.7" y="-2.54" length="middle"/>
+<pin name="B" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="RE" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="A" x="12.7" y="2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="4.445" x2="-7.62" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-4.445" x2="7.62" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-4.445" x2="7.62" y2="4.445" width="0.254" layer="94"/>
+<wire x1="7.62" y1="4.445" x2="-7.62" y2="4.445" width="0.254" layer="94"/>
+<text x="-7.62" y="5.08" size="1.778" layer="95" font="vector" ratio="13">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96" font="vector" ratio="13">&gt;VALUE</text>
+</symbol>
+<symbol name="RS485_TCVR_ISL">
+<pin name="DI" x="-12.7" y="2.54" length="middle"/>
+<pin name="VCC" x="-12.7" y="0" length="middle"/>
+<pin name="DE" x="-12.7" y="-2.54" length="middle"/>
+<pin name="Z" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="Y" x="12.7" y="2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="4.445" x2="-7.62" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-4.445" x2="7.62" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-4.445" x2="7.62" y2="4.445" width="0.254" layer="94"/>
+<wire x1="7.62" y1="4.445" x2="-7.62" y2="4.445" width="0.254" layer="94"/>
+<text x="-7.62" y="5.08" size="1.778" layer="95" font="vector" ratio="13">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96" font="vector" ratio="13">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F103RBT6" prefix="U">
@@ -1111,6 +1151,46 @@
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RS485_RCVR_ISL32612E" prefix="U">
+<gates>
+<gate name="G$1" symbol="RS485_RCVR_ISL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6_INTERSIL">
+<connects>
+<connect gate="G$1" pin="A" pad="6"/>
+<connect gate="G$1" pin="B" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RE" pad="5"/>
+<connect gate="G$1" pin="RO" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RS485_TCVR_ISL32614E">
+<gates>
+<gate name="G$1" symbol="RS485_TCVR_ISL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6_INTERSIL">
+<connects>
+<connect gate="G$1" pin="DE" pad="3"/>
+<connect gate="G$1" pin="DI" pad="1"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+<connect gate="G$1" pin="Y" pad="6"/>
+<connect gate="G$1" pin="Z" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
