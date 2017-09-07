@@ -352,16 +352,17 @@
 <circle x="-2" y="-1" radius="0.125" width="0.25" layer="21"/>
 </package>
 <package name="CONN_4X1_LEAF_SMT">
-<smd name="3" x="-1" y="0" dx="1.25" dy="3" layer="1"/>
-<smd name="2" x="1" y="0" dx="1.25" dy="3" layer="1"/>
-<smd name="4" x="-3" y="0" dx="1.25" dy="3" layer="1"/>
-<smd name="1" x="3" y="0" dx="1.25" dy="3" layer="1"/>
+<smd name="3" x="-1" y="0" dx="1" dy="3" layer="1"/>
+<smd name="2" x="1" y="0" dx="1" dy="3" layer="1"/>
+<smd name="4" x="-3" y="0" dx="1" dy="3" layer="1"/>
+<smd name="1" x="3" y="0" dx="1" dy="3" layer="1"/>
 <wire x1="-4" y1="2" x2="4" y2="2" width="0.125" layer="21"/>
 <wire x1="4" y1="2" x2="4" y2="-2" width="0.125" layer="21"/>
-<wire x1="4" y1="-2" x2="-4" y2="-2" width="0.125" layer="21"/>
 <wire x1="-4" y1="-2" x2="-4" y2="2" width="0.125" layer="21"/>
-<circle x="3" y="-2.75" radius="0.2" width="0.4" layer="21"/>
-<text x="5" y="0" size="1.4224" layer="21" font="vector" ratio="13" rot="R90" align="center">&gt;NAME</text>
+<circle x="3" y="-2.15" radius="0.2" width="0.4" layer="21"/>
+<text x="0" y="-2.62" size="0.8128" layer="21" font="vector" ratio="13" rot="R180" align="center">&gt;NAME</text>
+<wire x1="-4" y1="-2" x2="2.3" y2="-2" width="0.125" layer="21"/>
+<wire x1="4" y1="-2" x2="3.7" y2="-2" width="0.127" layer="21"/>
 </package>
 <package name="CONN_4X1_JST_PA">
 <smd name="1" x="3" y="-9.15" dx="1" dy="2.7" layer="1"/>
@@ -384,6 +385,9 @@
 <wire x1="-3" y1="-1.8" x2="3" y2="-1.8" width="0.127" layer="48"/>
 <wire x1="3" y1="-1.8" x2="3" y2="0" width="0.127" layer="48"/>
 <text x="7" y="-6.81" size="0.8128" layer="25" font="vector" ratio="13" rot="R270">&gt;NAME</text>
+<wire x1="-6" y1="1" x2="-6" y2="2.4" width="0.125" layer="49"/>
+<wire x1="-6" y1="2.4" x2="6" y2="2.4" width="0.125" layer="49"/>
+<wire x1="6" y1="2.4" x2="6" y2="1" width="0.125" layer="49"/>
 </package>
 <package name="SOT23-6_INTERSIL">
 <smd name="1" x="-0.95" y="-1.2" dx="0.6" dy="1.2" layer="1"/>
@@ -396,6 +400,24 @@
 <wire x1="1.6" y1="1" x2="1.6" y2="-1" width="0.125" layer="21"/>
 <circle x="-1.75" y="-1.5" radius="0.1" width="0.225" layer="21"/>
 <text x="-1.9" y="-1.1" size="0.8128" layer="25" font="vector" ratio="13" rot="R90">&gt;NAME</text>
+</package>
+<package name="CONN_4X1_JST_GH">
+<smd name="S2" x="-3.725" y="-1.4" dx="1" dy="2.8" layer="1"/>
+<smd name="S1" x="3.725" y="-1.4" dx="1" dy="2.8" layer="1"/>
+<smd name="1" x="1.875" y="-4.75" dx="0.6" dy="1.7" layer="1"/>
+<smd name="2" x="0.625" y="-4.75" dx="0.6" dy="1.7" layer="1"/>
+<smd name="3" x="-0.625" y="-4.75" dx="0.6" dy="1.7" layer="1"/>
+<smd name="4" x="-1.875" y="-4.75" dx="0.6" dy="1.7" layer="1"/>
+<wire x1="-2.5" y1="-0.3" x2="2.5" y2="-0.3" width="0.125" layer="21"/>
+<wire x1="-4.2" y1="-3.2" x2="-4.2" y2="-4.35" width="0.125" layer="21"/>
+<wire x1="-4.2" y1="-4.35" x2="-2.6" y2="-4.35" width="0.125" layer="21"/>
+<wire x1="2.6" y1="-4.35" x2="4.2" y2="-4.35" width="0.125" layer="21"/>
+<wire x1="4.2" y1="-4.35" x2="4.2" y2="-3.1" width="0.125" layer="21"/>
+<wire x1="-4.2" y1="1" x2="-4.2" y2="3.1" width="0.125" layer="49"/>
+<wire x1="-4.2" y1="3.1" x2="4.2" y2="3.1" width="0.125" layer="49"/>
+<wire x1="4.2" y1="3.1" x2="4.2" y2="1" width="0.125" layer="49"/>
+<circle x="3" y="-5" radius="0.15" width="0.275" layer="49"/>
+<text x="-4.4" y="-5.6" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -632,6 +654,24 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="CONN_4X1_JST_GH" prefix="J">
+<gates>
+<gate name="G$1" symbol="CONN_ICON_4X1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONN_4X1_JST_GH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -781,6 +821,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R2" library="stepOSP" deviceset="0603_RES" device="" value="NP"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND1" device=""/>
+<part name="J2" library="leaf" deviceset="CONN_4X1_LEAF_SMT" device=""/>
+<part name="J6" library="leaf" deviceset="CONN_4X1_JST_GH" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -848,6 +890,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="R2" gate="G$1" x="91.44" y="165.1" rot="R90"/>
 <instance part="+3V1" gate="G$1" x="91.44" y="175.26"/>
 <instance part="SUPPLY3" gate="G$1" x="193.04" y="127"/>
+<instance part="J2" gate="G$1" x="210.82" y="127"/>
+<instance part="J6" gate="G$1" x="175.26" y="86.36"/>
 </instances>
 <busses>
 </busses>
