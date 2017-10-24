@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -745,6 +745,88 @@
 <smd name="7" x="-5" y="-9.15" dx="1" dy="2.7" layer="1"/>
 <smd name="8" x="-7" y="-9.15" dx="1" dy="2.7" layer="1"/>
 </package>
+<package name="CONN_3X1_JST_PA">
+<smd name="1" x="2" y="-9.15" dx="1" dy="2.7" layer="1"/>
+<smd name="2" x="0" y="-9.15" dx="1" dy="2.7" layer="1"/>
+<smd name="3" x="-2" y="-9.15" dx="1" dy="2.7" layer="1"/>
+<smd name="P$1" x="4.35" y="-4.7" dx="1.8" dy="3.8" layer="1"/>
+<smd name="P$2" x="-4.35" y="-4.7" dx="1.8" dy="3.8" layer="1"/>
+<wire x1="-3" y1="-8.9" x2="-5" y2="-8.9" width="0.127" layer="21"/>
+<wire x1="-5" y1="-8.9" x2="-5" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="3" y1="-8.9" x2="5" y2="-8.9" width="0.127" layer="21"/>
+<wire x1="5" y1="-8.9" x2="5" y2="-7.5" width="0.127" layer="21"/>
+<circle x="3.75" y="-10" radius="0.25" width="0.5" layer="21"/>
+<wire x1="-5" y1="-2" x2="-5" y2="0" width="0.127" layer="48"/>
+<wire x1="-5" y1="0" x2="-2" y2="0" width="0.127" layer="48"/>
+<wire x1="-2" y1="0" x2="2" y2="0" width="0.127" layer="48"/>
+<wire x1="2" y1="0" x2="5" y2="0" width="0.127" layer="48"/>
+<wire x1="5" y1="0" x2="5" y2="-2" width="0.127" layer="48"/>
+<wire x1="-2" y1="0" x2="-2" y2="-1.8" width="0.127" layer="48"/>
+<wire x1="-2" y1="-1.8" x2="2" y2="-1.8" width="0.127" layer="48"/>
+<wire x1="2" y1="-1.8" x2="2" y2="0" width="0.127" layer="48"/>
+<text x="6.73" y="-6.81" size="1.6764" layer="25" font="vector" ratio="13" rot="R270" align="center">&gt;NAME</text>
+</package>
+<package name="CONN_2X1_JST_PA">
+<smd name="1" x="1" y="-9.15" dx="1" dy="2.7" layer="1"/>
+<smd name="2" x="-1" y="-9.15" dx="1" dy="2.7" layer="1"/>
+<smd name="P$1" x="3.35" y="-4.7" dx="1.8" dy="3.8" layer="1"/>
+<smd name="P$2" x="-3.35" y="-4.7" dx="1.8" dy="3.8" layer="1"/>
+<wire x1="-2" y1="-8.9" x2="-4" y2="-8.9" width="0.127" layer="21"/>
+<wire x1="-4" y1="-8.9" x2="-4" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-8.9" x2="4" y2="-8.9" width="0.127" layer="21"/>
+<wire x1="4" y1="-8.9" x2="4" y2="-7.5" width="0.127" layer="21"/>
+<circle x="2.75" y="-10" radius="0.25" width="0.5" layer="21"/>
+<wire x1="-4" y1="-2" x2="-4" y2="0" width="0.127" layer="48"/>
+<wire x1="-4" y1="0" x2="-2" y2="0" width="0.127" layer="48"/>
+<wire x1="-2" y1="0" x2="2" y2="0" width="0.127" layer="48"/>
+<wire x1="2" y1="0" x2="4" y2="0" width="0.127" layer="48"/>
+<wire x1="4" y1="0" x2="4" y2="-2" width="0.127" layer="48"/>
+<wire x1="-2" y1="0" x2="-2" y2="-1.8" width="0.127" layer="48"/>
+<wire x1="-2" y1="-1.8" x2="2" y2="-1.8" width="0.127" layer="48"/>
+<wire x1="2" y1="-1.8" x2="2" y2="0" width="0.127" layer="48"/>
+<text x="5" y="-8.08" size="0.8128" layer="25" font="vector" ratio="13" rot="R270" align="center">&gt;NAME</text>
+<wire x1="-4" y1="1" x2="-4" y2="2.4" width="0.125" layer="49"/>
+<wire x1="-4" y1="2.4" x2="4" y2="2.4" width="0.125" layer="49"/>
+<wire x1="4" y1="2.4" x2="4" y2="1" width="0.125" layer="49"/>
+</package>
+<package name="CONN_6X1_2P54">
+<pad name="1" x="0" y="0" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="2" x="2.54" y="0" drill="0.8" diameter="1.778"/>
+<pad name="3" x="5.08" y="0" drill="0.8" diameter="1.778"/>
+<pad name="4" x="7.62" y="0" drill="0.8" diameter="1.778"/>
+<pad name="5" x="10.16" y="0" drill="0.8" diameter="1.778"/>
+<pad name="6" x="12.7" y="0" drill="0.8" diameter="1.778"/>
+<wire x1="13.97" y1="1.27" x2="13.97" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
+<text x="-0.635" y="1.27" size="0.8128" layer="21" font="vector" ratio="13" rot="SR0">1</text>
+<wire x1="13.97" y1="1.27" x2="0.254" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="-1.016" y2="1.27" width="0.127" layer="21"/>
+</package>
+<package name="TC_2050_IC_TOP">
+<smd name="2" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="1" x="-2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="4" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="3" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="6" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="5" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<hole x="-3.81" y="0" drill="0.9906"/>
+<hole x="3.81" y="1.016" drill="0.9906"/>
+<hole x="3.81" y="-1.016" drill="0.9906"/>
+<text x="-3.81" y="1.27" size="0.8128" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<smd name="7" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="8" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="9" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="10" x="-2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<wire x1="-5.08" y1="5.14985" x2="3.175" y2="5.14985" width="0.0762" layer="48"/>
+<wire x1="3.175" y1="5.14985" x2="3.175" y2="-5.14985" width="0.0762" layer="48"/>
+<wire x1="3.175" y1="-5.14985" x2="-5.08" y2="-5.14985" width="0.0762" layer="48"/>
+<wire x1="-5.08" y1="-5.14985" x2="-5.08" y2="5.14985" width="0.0762" layer="48"/>
+<hole x="-3.81" y="2.54" drill="2.3749"/>
+<hole x="1.905" y="2.54" drill="2.3749"/>
+<hole x="1.905" y="-2.54" drill="2.3749"/>
+<hole x="-3.81" y="-2.54" drill="2.3749"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F103RB">
@@ -1242,6 +1324,52 @@
 <wire x1="0" y1="17.78" x2="0.762" y2="17.78" width="0.8128" layer="94"/>
 <pin name="8" x="-5.08" y="17.78" visible="pad" length="middle"/>
 </symbol>
+<symbol name="CONN_ICON_2X1">
+<pin name="1" x="-5.08" y="0" visible="pad" length="middle"/>
+<pin name="2" x="-5.08" y="2.54" visible="pad" length="middle"/>
+<wire x1="-1.27" y1="3.81" x2="2.032" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.032" y1="3.81" x2="2.032" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="3.81" width="0.254" layer="94"/>
+<text x="-1.27" y="4.445" size="1.27" layer="95" font="vector" ratio="13">&gt;NAME</text>
+<wire x1="0" y1="0" x2="0.762" y2="0" width="0.8128" layer="94"/>
+<wire x1="0" y1="2.54" x2="0.762" y2="2.54" width="0.8128" layer="94"/>
+</symbol>
+<symbol name="STM32L052KX_32_QFN">
+<pin name="VDD1" x="-17.78" y="17.78" length="middle"/>
+<pin name="PC14/OSC32_IN" x="-17.78" y="0" length="middle"/>
+<pin name="PC15/OSC32_OUT" x="-17.78" y="-2.54" length="middle"/>
+<pin name="NRST" x="-17.78" y="-27.94" length="middle"/>
+<pin name="VDDA" x="-17.78" y="7.62" length="middle"/>
+<pin name="CLK_IN/PA0" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="PA1" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="PA2" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="PA3" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="PA4" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="PA5" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="PA6" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="PA7" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="PB0" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="PB1" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<pin name="PB2" x="22.86" y="-30.48" length="middle" rot="R180"/>
+<pin name="VDD2" x="-17.78" y="15.24" length="middle"/>
+<pin name="PA8" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="PA9" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="PA10" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="PA11/D-" x="-17.78" y="-17.78" length="middle"/>
+<pin name="PA12/D+" x="-17.78" y="-20.32" length="middle"/>
+<pin name="PA13/SWDIO" x="-17.78" y="-22.86" length="middle"/>
+<pin name="PA14/SWCLK" x="-17.78" y="-25.4" length="middle"/>
+<pin name="PA15" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="PB3" x="22.86" y="-33.02" length="middle" rot="R180"/>
+<pin name="PB4" x="22.86" y="-35.56" length="middle" rot="R180"/>
+<pin name="PB5" x="22.86" y="-38.1" length="middle" rot="R180"/>
+<pin name="PB6" x="22.86" y="-40.64" length="middle" rot="R180"/>
+<pin name="PB7" x="22.86" y="-43.18" length="middle" rot="R180"/>
+<pin name="BOOT0" x="-17.78" y="-12.7" length="middle"/>
+<pin name="VSS" x="-20.32" y="-40.64" length="middle"/>
+<pin name="PAD" x="-20.32" y="-43.18" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F103RBT6" prefix="U">
@@ -1729,6 +1857,130 @@
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONN_2X1_JST_PA" prefix="J">
+<gates>
+<gate name="G$1" symbol="CONN_ICON_2X1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONN_2X1_JST_PA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONN_3X1_JST_PA">
+<gates>
+<gate name="G$1" symbol="CONN_ICON_3X1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONN_3X1_JST_PA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONN_6X1" prefix="J">
+<gates>
+<gate name="G$1" symbol="CONN_ICON_6X1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONN_6X1_2P54">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32L052KX" prefix="U">
+<gates>
+<gate name="G$1" symbol="STM32L052KX_32_QFN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STM32_QFN_32_5X5">
+<connects>
+<connect gate="G$1" pin="BOOT0" pad="31"/>
+<connect gate="G$1" pin="CLK_IN/PA0" pad="6"/>
+<connect gate="G$1" pin="NRST" pad="4"/>
+<connect gate="G$1" pin="PA1" pad="7"/>
+<connect gate="G$1" pin="PA10" pad="20"/>
+<connect gate="G$1" pin="PA11/D-" pad="21"/>
+<connect gate="G$1" pin="PA12/D+" pad="22"/>
+<connect gate="G$1" pin="PA13/SWDIO" pad="23"/>
+<connect gate="G$1" pin="PA14/SWCLK" pad="24"/>
+<connect gate="G$1" pin="PA15" pad="25"/>
+<connect gate="G$1" pin="PA2" pad="8"/>
+<connect gate="G$1" pin="PA3" pad="9"/>
+<connect gate="G$1" pin="PA4" pad="10"/>
+<connect gate="G$1" pin="PA5" pad="11"/>
+<connect gate="G$1" pin="PA6" pad="12"/>
+<connect gate="G$1" pin="PA7" pad="13"/>
+<connect gate="G$1" pin="PA8" pad="18"/>
+<connect gate="G$1" pin="PA9" pad="19"/>
+<connect gate="G$1" pin="PAD" pad="GND"/>
+<connect gate="G$1" pin="PB0" pad="14"/>
+<connect gate="G$1" pin="PB1" pad="15"/>
+<connect gate="G$1" pin="PB2" pad="16"/>
+<connect gate="G$1" pin="PB3" pad="26"/>
+<connect gate="G$1" pin="PB4" pad="27"/>
+<connect gate="G$1" pin="PB5" pad="28"/>
+<connect gate="G$1" pin="PB6" pad="29"/>
+<connect gate="G$1" pin="PB7" pad="30"/>
+<connect gate="G$1" pin="PC14/OSC32_IN" pad="2"/>
+<connect gate="G$1" pin="PC15/OSC32_OUT" pad="3"/>
+<connect gate="G$1" pin="VDD1" pad="1"/>
+<connect gate="G$1" pin="VDD2" pad="17"/>
+<connect gate="G$1" pin="VDDA" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="32"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TC_2050_IDC_TOP">
+<gates>
+<gate name="G$1" symbol="TC_2050_IDC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TC_2050_IC_TOP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
